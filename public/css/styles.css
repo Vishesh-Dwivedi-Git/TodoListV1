@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8; /* Light blue-grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container for the To-Do List */
+.box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin: 50px auto;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 30px; /* Adjusted margin bottom */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #1e88e5; /* Blue background */
+    color: #ffffff;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* To-Do Items */
+.item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ececec;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item p {
+    margin: 0;
+    padding: 0 12px;
+    flex-grow: 1;
+    font-size: 1.2em;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.2);
+}
+
+.item input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    color: #b0bec5;
+}
+
+/* Form */
+form.formItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px; /* Adjusted margin bottom */
+}
+
+form input[type="text"] {
+    width: 68%;
+    padding: 12px;
+    border: 2px solid #1e88e5; /* Blue border */
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form button {
+    width: 28%;
+    background: #03dac6; /* Teal background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #018786; /* Darker teal */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1e88e5; /* Blue background */
+    color: #ffffff; /* White text */
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
